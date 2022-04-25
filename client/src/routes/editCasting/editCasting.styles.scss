@@ -1,0 +1,382 @@
+.casting-edit-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 100px;
+
+    .save-casting-button-container{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+
+        button{
+            place-self: center;
+            width: 20%;
+            height: 50px;
+            border: 2px solid transparent;
+            border-radius: 5px;
+            background-color: rgb(128, 177, 72);
+            font-size: x-large;
+            color: rgb(252, 252, 252);
+            font-weight: bold;
+            cursor: pointer;
+        }
+    }
+
+    .casting-edit-card {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        width: 90%;
+        align-items: center;
+        padding-bottom: 20px;
+        padding-top: 25px;
+        
+
+        .casting-card-logo-container {
+            width: 50%;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            
+            .casting-card-logo {
+                justify-self: center;
+            
+            }
+
+            .casting-card-logo-image {
+                width: 45%;
+                justify-self: center;
+                text-align: center;
+                align-self: center;
+            }
+            
+        }
+    
+        .casting-card-description-textarea {
+            width: 60%;
+            font-size: xx-large;
+            padding: 10px;
+            resize: none;
+            
+        }
+
+        .casting-card-edit-casting-detail-list {
+            width: 75%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;;
+            
+
+            h3 {
+                font-size: 2.2em;
+                text-align: center;;
+            }
+
+            .list-item-container {
+                display: flex;
+                column-gap: 25px;
+                &:hover{
+                    font-weight: bold;
+                }
+
+                .list-item-buttons{
+                    width:75px;
+                    display: flex;
+                    column-gap: 10px;
+
+                    .edit {
+                        font-size: 25px;
+                        cursor: pointer;
+                    }
+
+                    .remove{
+                        font-size: 30px;
+                        cursor: pointer;
+                    }
+                }
+                textarea {
+                    font-size: 1.7em;
+                    width: 100%;
+                    resize: none;
+                    padding: 5px;
+                }
+            }
+        }
+
+        .add-casting-role {
+            width: 60%;
+            border: 2px solid black;
+            border-radius: 20px;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 25px;
+
+            h3 {
+                text-align: center;
+            }
+
+            button {
+                align-self: center;
+                background-color: blue;
+                width: 175px;
+                color: white;
+                font-size: larger;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+
+            .add-casting-role-inputs {
+                display: flex;
+                justify-content: space-around;
+
+                .select-role {
+                    font-size: large;
+                    width: 10%;
+                    display: flex;
+                    flex-direction: column;
+
+                    select {
+                        height: 40px;
+                        width: 350px;
+                        font-size: large;
+                    }
+                }
+
+                .select-role {
+                    width: 20%;
+                    display: flex;
+                    flex-direction: column;
+
+                    label {
+                        font-size: large;
+                    }
+
+                    select {
+                        height: 40px;
+                        width: 100%;
+                        font-size: large;
+                        padding-left: 10px;
+                    }
+                }
+
+                .new-casting-role-description {
+                    width: 30%;
+                    display: flex;
+                    flex-direction: column;
+                    align-self: center
+
+                    label {
+                        font-size: large;
+                    }
+
+                    textarea {
+                        width: 100%;
+                        font-size: x-large;
+                        resize: none;
+                    }
+                }
+
+                .new-casting-role-gender {
+                    width: 20%;
+                    display: flex;
+                    flex-direction: column;
+
+                    label {
+                        font-size: large;
+                    }
+
+                    select {
+                        height: 40px;
+                        font-size: large;
+                        padding-left: 10px;
+                    }
+                }
+            }
+        }
+
+        .add-additional-casting-detail {
+            display: flex;
+            width: 50%;
+            justify-content: center;
+            column-gap: 30px;
+
+            span {
+                place-self: center;
+                color: blue;
+                font-size: xx-large;
+                cursor: pointer;
+            }
+            
+            textarea {
+                width: 60%;
+                resize: none;
+            }
+        }
+
+        .casting-card-casting-roles-container {
+            text-align: center;
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 30px;
+           
+            .edit-casting-casting-role-container {
+                position: relative;
+                display: flex;
+                width: 80%;
+                justify-content:space-evenly;
+                align-self: center;
+                align-items: center;
+                &:hover {
+                    background-color: rgb(202, 202, 202);
+                    border: 5px;
+                    border-color: black;
+                    border-radius: 5px;
+                }
+
+                .edit-casting-casting-role-icon {
+                    width: 9%;
+                }
+
+                .edit-casting-casting-role-type {
+                    width: 160px;
+                    font-size: large;
+                }
+
+                .edit-casting-casting-role-gender {
+                    width: 75px;
+                    font-size:smaller;
+                }
+
+                .edit-casting-casting-role-edit-options {
+                    position: absolute;
+                    width: 200px;
+                    height: 100%;
+                    right: 0;
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 5px;
+                    justify-content: center;
+
+                    span {
+                        cursor: pointer;
+                    }
+                }
+
+                span {
+                    cursor:auto;
+                }
+
+            }
+
+        }
+
+        .casting-card-casting-questions-container {
+            text-align: center;
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 30px;
+
+            .edit-casting-casting-question-container {
+                width: 50%;
+                align-self: center;
+                display: flex;
+                justify-content: space-around;
+
+                .edit-casting-casting-question-text {
+                    font-size: large;
+                    width: 50%;
+                    text-align: left;
+                }
+
+                .edit-casting-casting-question-question-type {
+                    font-size: x-large;
+                    place-self: center;
+                }
+            }
+
+        }
+
+        .add-casting-question {
+            align-self: center;
+            width: 40%;
+            border: 2px solid black;
+            border-radius: 20px;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 25px;
+
+            h3 {
+                text-align: center;
+            }
+            button {
+                align-self: center;
+                background-color: blue;
+                width: 225px;
+                color: white;
+                font-size: larger;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+
+            .add-casting-question-inputs {
+                display: flex;
+                flex-direction: column;
+                row-gap: 30px;
+
+
+                .new-casting-question-text {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    resize: none;
+
+                    label {
+                        font-size: large;
+                        align-self: flex-start;
+                    }
+
+                    textarea {
+                        width: 100%;
+                        font-size: xx-large;
+                        padding: 10px;
+                    }
+                }
+
+                .new-casting-question-type {
+                    width: 60%;
+                    display: flex;
+                    flex-direction: column;
+
+                    label {
+                        font-size: large;
+                        align-self: flex-start;
+                    }
+
+                    select {
+                        height: 40px;
+                        font-size: large;
+                        padding-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

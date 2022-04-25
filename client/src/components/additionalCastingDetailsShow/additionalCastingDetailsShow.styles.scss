@@ -1,0 +1,12 @@
+.casting-card-additional-details-container {
+    font: bold;
+    font-size: x-large;
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 60%;
+    justify-content: space-around;
+
+    .casting-card-additional-detail {
+        width: 100%;
+    }
+}

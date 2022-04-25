@@ -1,0 +1,112 @@
+.casting-full-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 100px;
+
+    .casting-card-full {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        width: 90%;
+        align-items: center;
+        border-radius: 6px;
+        padding-bottom: 20px;
+        padding-top: 25px;
+        position: relative;
+
+        .edit-casting-button{
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            color: white;
+            font-weight: bold;
+            background-color: rgb(245, 90, 90);
+            font-size: larger;
+            border: transparent solid;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .casting-card-full-logo-container {
+            width: 50%;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            text-align: center;
+            
+            .casting-card-full-logo {
+                justify-self: center;
+            
+            }
+
+            .casting-card-full-logo-image {
+                width: 45%;
+                justify-self: center;
+                text-align: center;
+                align-self: center;
+            }
+            
+        }
+    
+        .casting-card-description {
+            width: 60%;
+            font-size: xx-large;
+        }
+
+        .casting-card-details-list-container {
+            width: 60%;
+
+            h3 {
+                font-size: 2.2em;
+                text-align: center;;
+            }
+
+            li {
+                font-size: 1.8em;
+            }
+        }
+
+        .casting-card-casting-roles-container {
+            text-align: center;
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 30px;
+           
+            .casting-card-casting-role-container {
+                display: flex;
+                width: 80%;
+                justify-content:space-evenly;
+                align-self: center;
+                align-items: center;
+                &:hover {
+                    background-color: rgb(202, 202, 202);
+                    border: 5px;
+                    border-color: black;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+
+                .casting-card-casting-role-icon {
+                    width: 9%;
+                }
+
+                .casting-card-casting-role-type {
+                    width: 160px;
+                    font-size: large;
+                }
+
+                .casting-card-casting-role-gender {
+                    width: 75px;
+                    font-size:smaller;
+                }
+            }
+
+        }
+    }
+}

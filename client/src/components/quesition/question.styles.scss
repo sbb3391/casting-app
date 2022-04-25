@@ -1,0 +1,63 @@
+
+.question {
+    width: 100%;
+    padding: 15px 5px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+
+    .question-text {
+        width: 40%;
+        font-size: large;
+    }
+
+    .question-response {
+        width: 40%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .radio-group {
+            display: flex;
+            align-items: center;
+
+
+            label {
+                font-size: large;
+                margin-left: 20px;
+            }
+
+            input[type='radio'] {
+                width: 1.2em;
+                height: 1.2em;
+                border: 0.3em solid black;
+                border-radius: 50%;
+            }
+        }
+    
+        textarea {
+            resize: none;
+            font-size: larger;
+            width: 100%;
+        }
+
+        input[type='number'] {
+            width: 25%;
+            font-size: 46px;
+            margin-right: auto;
+        }
+
+        input[type='text'] {
+            width: 40%;
+            margin-right: auto;
+            font-size: medium;
+        }
+
+        select {
+
+        }
+    }
+    
+
+    
+}
